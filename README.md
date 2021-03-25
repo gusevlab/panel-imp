@@ -2,6 +2,8 @@
 
 **Imputation workflow for targeted panels (typically from tumors)**
 
+![flowchart](Off-Target-Figure.svg)
+
 ## Preliminaries
 
 For imputation: install [STITCH](https://github.com/rwdavies/STITCH), and ensure that R, samtools, htslib, and vcftools can be called from the command line. Download 1000 Genomes reference data from [IMPUTE2](https://mathgen.stats.ox.ac.uk/impute/1000GP_Phase3.html), which must include `*hap.gz` and `*legend.gz` files. 
