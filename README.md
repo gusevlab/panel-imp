@@ -8,11 +8,11 @@
 
 For imputation: install [STITCH](https://github.com/rwdavies/STITCH), and ensure that R, samtools, htslib, and vcftools can be called from the command line. Download 1000 Genomes reference data from [IMPUTE2](https://mathgen.stats.ox.ac.uk/impute/1000GP_Phase3.html), which must include `*hap.gz` and `*legend.gz` files. 
 
-A containerized version of STITCH is also available [here](https://hub.docker.com/r/stefangroha/stitch_gcs).
-
 For other analyses: insure plink2 can be called from the command line.
 
 ## Imputation
+
+This is the main step of the pipeline, which runs the STITCH imputation algorithm. We also make a Docker container of STITCH available on [Docker Hub](https://hub.docker.com/r/stefangroha/stitch_gcs); version 0.2 is stable and version 0.3 contains an experimental update to a more efficient htslib.
 
 *Impute germline variants directly from a list of sequenced BAM files.*
 
