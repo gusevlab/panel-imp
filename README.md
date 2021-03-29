@@ -12,7 +12,7 @@ For other analyses: insure plink2 can be called from the command line.
 
 ## Imputation
 
-This is the main step of the pipeline, which runs the STITCH imputation algorithm. We also make a Docker container of STITCH available on [Docker Hub](https://hub.docker.com/r/stefangroha/stitch_gcs); version 0.2 is stable and version 0.3 contains an experimental update to a more efficient htslib.
+This is the main step of the pipeline, which runs the STITCH imputation algorithm. We also make a Docker container of STITCH available on [Docker Hub](https://hub.docker.com/r/stefangroha/stitch_gcs); version 0.2 is stable and version 0.3 contains an experimental update to a more efficient htslib. The WDL workflow (compatible with Terra) is also provided in `stitch_gcs.wdl`.
 
 *Impute germline variants directly from a list of sequenced BAM files.*
 
